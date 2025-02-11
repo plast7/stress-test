@@ -1,7 +1,7 @@
 from randomfactory import *
-n = generate_integer(2, 10)
-m = generate_integer(2, 10)
-q = generate_integer(1, 10)
+n = generate_integer(2, 5)
+m = generate_integer(2, 5)
+q = generate_integer(1, 5)
 
 arr = generate_2d_array(n, m, 0, 5)
 
