@@ -1,12 +1,20 @@
-from random import randint
+from randomfactory import *
+n = generate_integer(2, 10)
+m = generate_integer(2, 10)
+q = generate_integer(1, 10)
 
-n = randint(1, 100)
-k = randint(1, 100)
+arr = generate_2d_array(n, m, 0, 5)
 
-arr = [
-	randint(1, 100) for _ in range(n)
-]
+print(n, m, q)
 
-print(n, k)
-for elem in arr:
-	print(elem, end=" ")
+for row in arr:
+    for elem in row:
+        print(elem, end=' ')
+    print()
+
+cnt = 0
+while cnt < q:
+    row = generate_integer(1, n)
+    dir = 'L' if generate_integer(0, 1) == 0 else 'R'
+    print(row, dir)
+    cnt += 1

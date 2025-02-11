@@ -31,3 +31,13 @@ c. program2.cpp (slow, but accurate code)
 
 d. 해당 디렉토리로 이동해, python3 test.py를 실행합니다.
 
+사용예시
+
+```
+python3 stress_test.py program1.cpp program2.cpp
+```
+
+```
+python3 stress_test.py program1.cpp program2.py
+```
+
